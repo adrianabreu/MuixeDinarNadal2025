@@ -1,0 +1,506 @@
+[
+  {
+    "nom": "Gabriel",
+    "alias": "Gabri",
+    "context": "Gabriel… tanta pau, seny i patxamama només poden anar a una casa: el barret et fa MUIXELOVER de manual.",
+    "fraseBarret": "President de la colla, representa la patxamama i el saber-estar, el seny, mai la rauxa.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Míriam",
+    "alias": "Míriam",
+    "context": "Míriam… cos petit, cor enorme i sempre amunt: el barret et veu com una MUIXELOVER que sosté la colla des de dalt.",
+    "fraseBarret": "Petita alçadora amb un cor molt gran, forma part de la Junta i és la vicepresidenta.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Laia Ferrando",
+    "alias": "Laia",
+    "context": "Laia Classic… somriure etern i alçades impecables: el barret et col·loca a COMBOIET, on l’energia mai cau.",
+    "fraseBarret": "D’Algemesí, alçadora d’una categoria espectacular, bona gent i sempre amb un somriure.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Marta Peris",
+    "alias": "Marta",
+    "context": "Marta Peris… mestra de persones i figures, sempre al peu del canó: el barret t’assenyala clarament com a MUIXELOVER.",
+    "fraseBarret": "Mestra de la colla, sempre amb un somriure, una paraula amable i cuidant a la gent.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Iván Garnelo",
+    "alias": "Iván",
+    "context": "Iván Garnelo… idees infinites i paraules sense límit: el barret et deixa a COMBOIET, epicentre de xapes i bon rotllo.",
+    "fraseBarret": "Últim guanyador del Premi Xapes, molt disposat a treballar per la colla, molt intel·ligent i molt bona persona, però un poquet xapes, sempre parlant.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Eva Moliner",
+    "alias": "Moliner",
+    "context": "Eva Moliner… qui cuida la xicalla cuida el futur: el barret t’abraça i et declara MUIXELOVER fins al moll de l’os.",
+    "fraseBarret": "Cap de xicalla, cuida els xiquets i xiquetes i millora constantment per fer les millors figures.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Pepelu",
+    "alias": "Pepelu",
+    "context": "Pepelu… carisma, família i valors muixeranguers forts: el barret no dubta, ets MUIXELOVER total.",
+    "fraseBarret": "Pare de Pol i Joan, home carismàtic, entregat i amb uns valors muixeranguers molt grans.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Carles",
+    "alias": "Carles",
+    "context": "Carles… cada núvol, cada festa i cada figura passen pel teu radar: el barret et proclama FOMO DE FERRO, que no es perd res.",
+    "fraseBarret": "Personatge de la colla, el més divertit i xerraina, meteoròleg de capçalera, sempre amb alguna cosa per explicar.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Roger",
+    "alias": "Roger",
+    "context": "Roger… nou però ja imprescindible, compromès i rialler: el barret et veu com un TALENT EMERGENT que puja fort.",
+    "fraseBarret": "Talent emergent molt compromès, català i molt divertit, sempre amb un somriure a la cara.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Joanot",
+    "alias": "Joanot",
+    "context": "Joanot… alçada, memes i amor per la terra: el barret et llança directe a FOMO DE FERRO, on mai falta festa ni pinya.",
+    "fraseBarret": "Castellonenc, enamorat del País Valencià i de Catalunya, cap de pinyes, dels més alts de la colla, una ‘loca’ estimada, rei dels memes i molt divertit; referent des de fa anys.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Jordi",
+    "alias": "Jordi",
+    "context": "“Jordi… memes infinits, pinyes i festa fins al final: el barret et proclama FOMO DE FERRO, ànima memera i noctàmbula de la colla.”",
+    "fraseBarret": "Rei dels memes, tothom vol escoltar-lo perquè sempre hi ha alguna cosa graciosa darrere de les seues paraules; cap de pinyes i enamorat del projecte des de fa temps; molt estimat i sempre fins al final de les festes.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Celia Sanjuan",
+    "alias": "Celia",
+    "context": "Celia… somriure, creixement i lluita feminista: el barret et veu com un TALENT EMERGENT amb molt de futur.",
+    "fraseBarret": "Talent emergent, evoluciona molt ràpidament, sempre amb un somriure i forma part de la comissió feminista.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Meritxell",
+    "alias": "Meritxell",
+    "context": "Meritxell… cap i cor al servei de la llengua i de la colla: el barret et deixa a la casa MUIXELOVER, guardiana dels valors.",
+    "fraseBarret": "Psicòloga, enamorada del País Valencià i defensora de la llengua; des del principi ha aportat moltíssim a la colla.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Albert Montserrat",
+    "alias": "Montserrat",
+    "context": "Albert Montserrat… pont entre muixiganga i muixeranga: el barret et tria MUIXELOVER, ambaixador de tradicions.",
+    "fraseBarret": "Home curiós de Sitges que comparteix la seua muixiganga, una cultura de tors humans molt arrelada i diferent però germana.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Teresa Pitarch",
+    "alias": "Tere",
+    "context": "Tere Pitarch… origen, arrels i projecte de vida: el barret et corona com a MUIXELOVER fundacional.",
+    "fraseBarret": "Tere, mestra fa quatre anys, amb valors muixeranguers molt arrelats; persona seriosa però divertida, gaudeix molt del projecte que va ajudar a crear fa set anys.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Miquel",
+    "alias": "Miquel",
+    "context": "Miquel… nervis, xapes i amor infinit per la colla: el barret t’abraça fort i et deixa a MUIXELOVERS sense discussió.",
+    "fraseBarret": "Primer mestre de la muixeranga i ànima d’aquesta dinàmica; nerviós i una mica xapes, però qui més estima el projecte.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Peña",
+    "alias": "Peña",
+    "context": "Peña… explosió d’energia, pinya i il·lusió tècnica: el barret et veu com un TALENT EMERGENT que ja juga a primera.",
+    "fraseBarret": "Cap de pinyes, caràcter explosiu, enamorada de la muixeranga, molt optimista i gran talent emergent ja dins l’equip tècnic.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "irene bolu",
+    "alias": "Bolu",
+    "context": "Irene Bolu… reptes, energia i futur als ulls: el barret et tria com a TALENT EMERGENT de la nova fornada.",
+    "fraseBarret": "Talent emergent coneguda l’any passat i que enguany es desenvolupa molt ràpidament, aconseguint reptes; és la joventut i energia que necessita la colla.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "David Borrell",
+    "alias": "Borrell",
+    "context": "David Borrell… alçada, barri i lluita: el barret et fa MUIXELOVER, bastió ferm dels valors de la colla.",
+    "fraseBarret": "Un dels més alts de la colla, molt bona persona, de la Barceloneta, molt català i sempre en lluita.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Alberto",
+    "alias": "Alberto",
+    "context": "Alberto… nou, fort i amb ganes de festa: el barret et veu claríssim com a TALENT EMERGENT amb esperit de FOMO.",
+    "fraseBarret": "Talent emergent arribat enguany amb molta força; primeres mans segures i gran afició a la festa.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Laura de Luis",
+    "alias": "De Luis",
+    "context": "Laura de Luis… petita tempesta de riures, idees i ajuda: el barret et posa a COMBOIET, motoret de bon rotllo.",
+    "fraseBarret": "Companya de la dinàmica, petita i divertida, sempre ajudant la colla i capaç d’arrencar un somriure a tothom; forma part de la Junta i de la Comissió Tecnològica.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Adrián Abreu González",
+    "alias": "Adri",
+    "context": "Adri… bits, bromes i alçades de Tenerife: el barret et col·loca a COMBOIET, wifi de festa assegurada.",
+    "fraseBarret": "Canari de Tenerife, tecnològic i molt divertit; el número 23 és la seua alçada.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Mònica",
+    "alias": "Mònica",
+    "context": "Mònica… cada figura al teu cap i cada persona al teu cor: el barret t’assenyala com a MUIXELOVER de vocació.",
+    "fraseBarret": "Mestra molt compromesa amb tota la colla, es trenca el cap perquè tothom participe i perquè la muixeranga arribe tan alt com ampla a la plaça.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Fadi Saati",
+    "alias": "Fadi",
+    "context": "Fadi… d’Armènia a la plaça, entre memes i reptes nous: el barret et veu com a TALENT EMERGENT amb molt a dir.",
+    "fraseBarret": "D’Armènia, casteller que s’ha sumat a la muixeranga i ja forma part del camí on vol arribar la colla; sempre porta algun meme.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Ester Gimeno",
+    "alias": "Ester",
+    "context": "Ester… botes posades, festa a punt i ganes d’encadenar partits i figures: el barret et veu com a TALENT EMERGENT amb FOMO incorporat.",
+    "fraseBarret": "Futbolista i talent emergent que ve acompanyada i sempre molt festera.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Luca",
+    "alias": "Luca",
+    "context": "Luca… pasta, troncs i cos entregat a la colla: el barret et proclama MUIXELOVER, pilar mediterrani de la pinya.",
+    "fraseBarret": "L’italià de la colla, sempre té alguna cosa per cuinar i és cap de troncs; té molts valors muixeranguers i diu que ha entregat el seu cos a la muixeranga.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Lluïsa",
+    "alias": "Lluïsa",
+    "context": "Lluïsa… abraçades, troncs i compromís fins al cim: el barret et fa MUIXELOVER, cor dolç i ferm de la colla.",
+    "fraseBarret": "Cap de troncs de la Vilatge Oyosa, Marina Baixa; xiqueta que tothom voldria abraçar, molt agradable, amable i compromesa amb el projecte.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Rafel",
+    "alias": "Rafel",
+    "context": "Rafel… agendes, contactes i cultura de barri: el barret et posa a MUIXELOVERS, ambaixador cultural de la muixeranga.",
+    "fraseBarret": "L’home amb més contactes del barri de Sants, ha donat un valor importantíssim a la colla i fa veure l’activitat des d’un prisma molt cultural.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Laiuski",
+    "alias": "Laiuski",
+    "context": "Laiuski… xicalla, compromís i futur als ulls: el barret et tria com a TALENT EMERGENT de llarg recorregut.",
+    "fraseBarret": "De la Font del Carròs, nou talent emergent de l’any passat, molt compromesa amb la xicalla i amb moltes ganes de seguir; la Iusqui és futur de la colla.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Claraaaa",
+    "alias": "Clara",
+    "context": "Clara… cada xiquet al cor i un somriure per a cadascú: el barret et veu MUIXELOVER, protectora oficial de la xicalla.",
+    "fraseBarret": "Cap de xicalla, un amor empàtic, molt compromesa amb tots els xiquets i sempre amb un somriure.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Olgaaa",
+    "alias": "Olga",
+    "context": "Olga… de València a Barcelona, dolçor i xicalla a parts iguals: el barret et tria MUIXELOVER amb faixa i somriure.",
+    "fraseBarret": "Muixeranguera de la Muixeranga de València enamorada de la Muixeranga de Barcelona; cap de xicalla i molt dolceta.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Sofia",
+    "alias": "Sofia",
+    "context": "Sofia… troncs ferms i amabilitat infinita: el barret et posa a COMBOIET, on l’ajuda i el somriure mai fallen.",
+    "fraseBarret": "Forma part de l’equip de troncs; tan amable que impressiona, sempre té una paraula amable i està disposada a ajudar; l’any passat va ser talent emergent de la colla.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Neusin",
+    "alias": "Neusin",
+    "context": "Neusin… terratrèmol d’amor, emoció i xicalla: el barret et veu MUIXELOVER d’alt voltatge afectiu.",
+    "fraseBarret": "Terremoto amorós, cap de xicalla i molt emocional; la muixeranga és un projecte que s’ha fet seu i que l’ha fet créixer molt; sempre disposada a ajudar.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Pere Ahuir Lloret",
+    "alias": "Pere",
+    "context": "Pere… tabal, cuina i bon ambient allà on vas: el barret et declara COMBOIET, ritme i festa per a la colla.",
+    "fraseBarret": "Tabal de la colla de tabals i xirimites, sempre ajuda a cuinar i a passar-ho bé; és un home molt de la colla.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Josep Grau",
+    "alias": "Josep",
+    "context": "Josep Grau… fundador, valors i respecte en cada pas: el barret et proclama MUIXELOVER, far de la colla.",
+    "fraseBarret": "Fundador de la colla, representa els valors muixeranguers per davant de tot; molt amable, respecta sempre qui està al capdavant i quan opina ho fa amb molta cura.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "José Larrubia",
+    "alias": "José",
+    "context": "José la Rubia… acollida andalusa i alegria granadina: el barret et col·loca a COMBOIET, porta d’entrada més càlida de la colla.",
+    "fraseBarret": "Andalús granadí molt divertit, sempre té una frase amable i una acollida per a tothom; forma part de la comissió d’acollida i rep les noves persones amb molta alegria.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Guille",
+    "alias": "Guille",
+    "context": "vas i véns de la tècnica, però mai de la colla: el barret et fa MUIXELOVER, suport fidel en segon pla.",
+    "fraseBarret": "S’ha deixat la tècnica dues vegades, però sempre està ahí esperant que li demanen qualsevol cosa per ajudar; suport constant des de fora de focus.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Victòria",
+    "alias": "Victòria",
+    "context": "Victòria… compromís, família i mirada feminista: el barret et tria MUIXELOVER, defensa dels valors dins i fora de plaça.",
+    "fraseBarret": "Molt compromesa des de l’any passat, forma part de la comissió feminista i ve en família a la muixeranga, sempre amb un to molt amable.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Sandra",
+    "alias": "Sandra",
+    "context": "Sandra… elevadora revelació i figures que fan història: el barret et veu com a TALENT EMERGENT que apunta altíssim.",
+    "fraseBarret": "Talent emergent que va començar l’any passat; elevadora revelació que ha posat en el mapa el jinete Terra de muixerangues.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Juds",
+    "alias": "Juds",
+    "context": "Juds… bata invisible, cures i riure contagiós: el barret et declara MUIXELOVER, guardian@ de la salut muixeranguera.",
+    "fraseBarret": "Forma part de la comissió sanitària, catalana de l’Hospitalet, amb un riure molt contagiós; cuida de tota la colla a nivell de salut.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Maria Diez",
+    "alias": "Maria",
+    "context": "Maria Díez… alçada basca i empenta feminista: el barret et col·loca a MUIXELOVERS, alçant dones i figures noves.",
+    "fraseBarret": "La nòvia més alta de la colla, d’Euskal Herria; ha posat en valor la muixeranga al País Basc i ha ajudat a fer figures de dones que abans no es feien.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Isabel",
+    "alias": "Isabel",
+    "context": "Isabel… petita d’alçada però gegant en somriures: el barret et veu com a TALENT EMERGENT ple de llum.",
+    "fraseBarret": "Talent emergent, persona petita i amable, sempre amb un somriure.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Josep (Fumat)",
+    "alias": "Fumat",
+    "context": "Fumat… xicalla, sud i castells a la sang: el barret et veu com a TALENT EMERGENT amb cor de MUIXELOVER.",
+    "fraseBarret": "Nou en l’equip de xicalla, amant dels xiquets i xiquetes i del sud del País Valencià, terra de castells.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Amaranta",
+    "alias": "Amaranta",
+    "context": "Amaranta… Betis, festa i faixa sense descans: el barret et proclama FOMO DE FERRO, reina del fetge muixeranguer.",
+    "fraseBarret": "En guany és sense dubte el fetge de festa; li agrada la festa, participar i la muixeranga; sevillana del Betis que no deixa ningú indiferent.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Selena lopez perez",
+    "alias": "Selena",
+    "context": "Selena… escenari abans que assaig, somriure abans que tot: el barret et deixa a FOMO DE FERRO, sempre present quan la plaça canta.",
+    "fraseBarret": "Fa temps que intentem col·locar-la a prop de Sònia per muntar un grup de música; no es perd cap actuació, els assajos li costen més, però aquell somriure ho compensa.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Nius",
+    "alias": "Nius",
+    "context": "Nius… xicalla, ajuda i somriure constant: el barret et tria MUIXELOVER, abraçada permanent de la colla.",
+    "fraseBarret": "Ajudanta de xicalla i amant dels xiquets i xiquetes; sempre amb somriure i ganes d’ajudar.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Llorenç",
+    "alias": "Llorenç",
+    "context": "Llorenç… mestre, motor i enamorat del projecte: el barret et proclama MUIXELOVER, cervell i cor d’esta història.",
+    "fraseBarret": "Qui està preparant la dinàmica; amant de Laura, la seua companya; va ser mestre de la muixeranga l’any passat i li agrada ajudar perquè el projecte avance.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Mireia Romaguera i Montañola",
+    "alias": "Mireia",
+    "context": "Mireia… plaça compartida entre castells i muixerangues: el barret et posa a COMBOIET, convidada de luxe a cada figura.",
+    "fraseBarret": "Sempre que pot ve a actuacions i assajos; castellera espectacular de l’Esquerra de l’Eixample.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Sergi Pastor",
+    "alias": "Sergi",
+    "context": "Sergi… pinyes cuidades, tècnica fina i fetge provat: el barret et declara FOMO DE FERRO, resistència i estima en cada assaig.",
+    "fraseBarret": "Mestre l’any passat amb Llorenç; prepara les pinyes amb molt de carinyo i tècnica espectacular; l’any passat va guanyar el premi Fetge de ferro.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Miguel Hortelano",
+    "alias": "Hortelano",
+    "context": "Hortelano… serietat, constància i feina ben feta: el barret et veu MUIXELOVER, exemple de perseverança muixeranguera.",
+    "fraseBarret": "Fa temps que està a la colla; seriós però constant, ha aconseguit les proves que li han posat amb treball i dedicació.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Robert",
+    "alias": "Robert",
+    "context": "Robert… dels inicis i sempre present encara que siga des de fora: el barret et manté a MUIXELOVERS, veterà en reserva activa.",
+    "fraseBarret": "Ara no està a les pinyes però forma part dels inicis del projecte; s’espera tornar a veure’l prop d’una pinya.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Cubero",
+    "alias": "Cubero",
+    "context": "“Cubero… cançons, paelles i missatges d’amor nocturns: el barret et proclama FOMO DE FERRO, festa i estima a parts iguals.”",
+    "fraseBarret": "Músic de la colla, ha fet una cançó per a vosaltres; arriba sovint borratxet a casa i envia missatges amorosos a la colla. Amant de la cuina i la paella; valencià de cor però d’Hospitalet.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Ferran Rosell",
+    "alias": "Ferran Rosell",
+    "context": "“Ferran Rosell… orellut, compromès i sempre fent ponts amb Sants: el barret et veu com a TALENT EMERGENT de bandera.”",
+    "fraseBarret": "De Castelló de la Plana i del CD Castelló; talent emergent que des de l’any passat ho està donant tot i ha obert molts llaços amb els castellers de Sants.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Paloma",
+    "alias": "Paloma",
+    "context": "“Paloma… baix esplèndida, somriure tranquil i ni una queixa: el barret et deixa a MUIXELOVERS, columna dolça de la colla.”",
+    "fraseBarret": "Gallega d’origen, mai es queixa, sempre amb somriure i disposada a fer el que calga per la muixeranga; és una baixa espectacular.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Laura Huart",
+    "alias": "Laura",
+    "context": "“Laura Huart… cures, riures i escalfaments mítics: el barret et col·loca a COMBOIET, medicina i festa tot en un.”",
+    "fraseBarret": "De la comissió sanitària, vetlla per les vostres vides i és una de les persones més divertides de la colla; els seus escalfaments són inigualables.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Maria Franch (Mafra)",
+    "alias": "Mafra",
+    "context": "“Mafra… diamant en brut, alçadora amb molt futur: el barret et veu com a TALENT EMERGENT llest per brillar.”",
+    "fraseBarret": "Talent emergent, un diamant per descobrir, amb un perfil molt bo d’alçadora i molt per aportar els pròxims mesos.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Amparo Prades",
+    "alias": "Amparo",
+    "context": "“Amparo… rialles, ‘merch’ i anys de projecte: el barret et fa COMBOIET, motor comercial i festiu de la colla.”",
+    "fraseBarret": "Diversió en persona, mare d’un muixeranguer i involucrada en el projecte des dels inicis; a la comissió de material ha fet que es venguen moltes més coses.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Ferran",
+    "alias": "Ferran",
+    "context": "“Ferran… taladre, desfase i llegenda viva de la festa: el barret et proclama FOMO DE FERRO sense cap mena de dubte.”",
+    "fraseBarret": "L’any passat va guanyar el premi al personatge de l’any (molt disputat amb Carles); amb el seu desfase de festa i el taladre guanyat en un concurs sempre deixa tothom bocabadat.",
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Shannon",
+    "alias": "Shannon",
+    "context": "Shannon… mig cor a Califòrnia i mig a la plaça: el barret et veu com a COMBOIET, ajudant discreta però imprescindible.",
+    "fraseBarret": "De Califòrnia, una de les membres més internacionals; fa temps que és amb vosaltres i sempre que pot ve a donar un cop de mà.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Enric (Lloret)",
+    "alias": "Lloret",
+    "context": "Lloret… saforí, graciós i una mica desaparegut de tant en tant: el barret et declara COMBOIET, perquè quan véns la festa puja un pis més.",
+    "fraseBarret": "El tio més salat de la colla, pare de família, molt divertit, de la Safor, cor del País Valencià; de vegades us deixa tirats a última hora, però la seua presència sempre paga la pena.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Xavi",
+    "alias": "Xavi",
+    "context": "Xavi… faixes, família i mirada crítica que fa créixer: el barret et deixa a MUIXELOVERS, casa del seny muixeranguer.",
+    "fraseBarret": "Pare de família i segon president de la Muixeranga de Barcelona; sempre compromés amb el projecte i amb un punt de crítica constructiva molt valuós.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Alfred Ferrer",
+    "alias": "Alfred",
+    "context": "Alfred… joventut castellonenca i ofici de La Plana: el barret et veu com a MUIXELOVER, futur amb arrels ben fondes.",
+    "fraseBarret": "Fins fa poc el més jove de la colla; castellonenc que abans feia Muixeranga La Plana, amb trajectòria i arrels muixerangueres.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Gerard Blasco",
+    "alias": "Gerard",
+    "context": "Gerard… Sueca al cor, hiperactivitat amable i sempre un pla nou: el barret et posa a COMBOIET, perquè contagies ganes de fer coses a tota la colla.",
+    "fraseBarret": "Saforenc de Sueca, on el valencià no és cap dubte; improvisador i hiperactiu amable, ha portat família i alumnes a la muixeranga.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Wendy Sawadogo",
+    "alias": "Wendy",
+    "context": "Wendy… aire fresc, pas ferm i futur per escriure: el barret et veu com a TALENT EMERGENT amb un sostre molt alt.",
+    "fraseBarret": "Talent emergent que aporta aire fresc a la colla; teniu molt bones expectatives posades en ella.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Núria Porcar",
+    "alias": "Núria",
+    "context": "Núria… dels inicis, ara a la reserva però mai lluny del cor de la colla: el barret et deixa a MUIXELOVERS, arrel i nostàlgia muixeranguera.",
+    "fraseBarret": "Des de l’inici del projecte amb vosaltres; ara mare de dos xiquets, està a la reserva però sempre esperant tornar.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Blai - xicalla",
+    "alias": "Blai",
+    "context": "Blai… quatre anyets i mil idees al cap: el barret et proclama TALENT EMERGENT de la xicalla, futur assegurat a la plaça.",
+    "fraseBarret": "Fill de Núria, xicalla i futur de la colla; sempre diu coses molt curioses tot i tindre quatre anys, és un amor.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Aloma - xicalla",
+    "alias": "Aloma",
+    "context": "Aloma… curiositat als ulls i enamorament en marxa: el barret et veu com a TALENT EMERGENT, florint a poc a poc entre faixes.",
+    "fraseBarret": "Xiqueta que comença a enamorar-se de la muixeranga; tota la colla té molta il·lusió que li agrade cada vegada més i s’integre.",
+    "categoria": "Talents emergents"
+  },
+  {
+    "nom": "Pol - xicalla",
+    "alias": "Pol",
+    "context": "Pol… enano de naixement muixeranguer, broma constant i carisma infantil: el barret et posa a COMBOIET, ànima de la xicalla.",
+    "fraseBarret": "Un dels grans personatges de la colla; el més divertit dels xiquets, criat entre muixerangues des que és molt menut, sempre gastant bromes i molt estimat.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Joan - ajudant de xicalla",
+    "alias": "Joan",
+    "context": "Joan… de xicalla fundadora a pinya i suport: el barret et declara MUIXELOVER, pont entre generacions muixerangueres.",
+    "fraseBarret": "Germà de Pol; ja no és xicalla, ha passat a fer pinya i ajudar a la xicalla. Va ser a la colla des de la seua creació fins avui.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Lina",
+    "alias": "Lina",
+    "context": "Lina… colors a la cara, pilars ferms i anys de dedicació: el barret et tria MUIXELOVER, artista i base de la colla a parts iguals.",
+    "fraseBarret": "D’Equador, fa molts anys que pertany a la colla; sempre disposada a fer un piló i a pintar les cares de la xicalla.",
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Martí - xicalla",
+    "alias": "Martí",
+    "context": "Martí… energia desbordada i mans de músic en potència: el barret et col·loca a COMBOIET, que fa més soroll i alegria que moltes figures juntes.",
+    "fraseBarret": "Fill de Lina i Lloret; és un terremoto, potser no és el xiquet que més li agrada la muixeranga, però si li dones un tabal serà el vostre músic. Molt estimat per tothom.",
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Guille",
+    "alias": "Guille",
+    "context": "Rie… vas i véns de la tècnica, però mai de la colla: el barret et fa MUIXELOVER, suport fidel en segon pla.",
+    "fraseBarret": "S’ha deixat la tècnica dues vegades, però sempre està ahí esperant que li demanen qualsevol cosa per ajudar; suport constant des de fora de focus.",
+    "categoria": "Muixelovers"
+  }
+]

@@ -1,0 +1,18 @@
+<div class="member-card" (click)="toggleReveal()">
+  <!-- Àlies - sempre visible -->
+  <div class="alias">{{ member.alias }}</div>
+
+  <!-- Frase del barret - visible si revealState >= 1 -->
+  <div class="frase" *ngIf="revealState >= 1">
+    <p>{{ member.context }}</p>
+  </div>
+
+  <!-- Categoria - visible si revealState === 2 -->
+  <div 
+    class="categoria" 
+    *ngIf="revealState === 2" 
+    [style.background-color]="getCategoryColor()">
+    <h3>{{ member.categoria }}</h3>
+  </div>
+</div>
+

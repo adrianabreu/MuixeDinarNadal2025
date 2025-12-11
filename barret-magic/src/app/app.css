@@ -1,0 +1,124 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Capçalera */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FF3F32;
+  margin: 0 0 1rem 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 10px #FF3F32;
+  }
+  to {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px #FF3F32, 0 0 30px #FF3F32;
+  }
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #19C7E6;
+  margin: 0 0 1.5rem 0;
+}
+
+.group-info {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+/* Grid de membres */
+.members-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+/* Botons de navegació */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.nav-button {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+  border: 3px solid #333;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  border-color: #19C7E6;
+}
+
+.nav-button.primary {
+  background: linear-gradient(135deg, #FF3F32 0%, #cc3228 100%);
+  border-color: #FF3F32;
+}
+
+.nav-button.primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ff5542 0%, #FF3F32 100%);
+  border-color: #ff5542;
+}
+
+.nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Responsive per pantalles més xicotetes */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .nav-button {
+    width: 100%;
+  }
+}
+
