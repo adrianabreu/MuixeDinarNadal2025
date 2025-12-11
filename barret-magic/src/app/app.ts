@@ -41,14 +41,26 @@ export class AppComponent implements OnInit {
    * Carrega els membres des del fitxer JSON
    */
   loadMembers(): void {
-    this.http.get<Member[]>('members.json').subscribe({
+    // Try public folder first (served from root), then assets folder
+    this.http.get<Member[]>('/members.json').subscribe({
       next: (data) => {
         this.allMembers = data;
         this.totalGroups = Math.ceil(this.allMembers.length / this.MEMBERS_PER_GROUP);
         this.updateCurrentGroup();
       },
       error: (err) => {
-        console.error('Error carregant membres:', err);
+        console.error('Error carregant membres des de /members.json:', err);
+        // Fallback to assets folder
+        this.http.get<Member[]>('assets/members.json').subscribe({
+          next: (data) => {
+            this.allMembers = data;
+            this.totalGroups = Math.ceil(this.allMembers.length / this.MEMBERS_PER_GROUP);
+            this.updateCurrentGroup();
+          },
+          error: (err2) => {
+            console.error('Error carregant membres des de assets/members.json:', err2);
+          }
+        });
       }
     });
   }
@@ -60,6 +72,8 @@ export class AppComponent implements OnInit {
     const startIndex = this.currentGroupIndex * this.MEMBERS_PER_GROUP;
     const endIndex = startIndex + this.MEMBERS_PER_GROUP;
     this.currentGroup = this.allMembers.slice(startIndex, endIndex);
+    // Clear active member when changing groups
+    this.activeMember = null;
   }
 
   /**
