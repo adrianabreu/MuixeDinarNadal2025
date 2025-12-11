@@ -55,18 +55,31 @@ L'aplicació s'obrirà automàticament al navegador a http://localhost:4200/
 
 Si necessites actualitzar les dades dels membres:
 
+### Mètode fàcil (recomanat)
 1. Edita l'Excel `barret_magic_muixeranga_COMPLET.xlsx`
-2. Crea un entorn virtual Python i instal·la openpyxl:
+2. Obre el terminal a la carpeta `barret-magic`
+3. Executa:
    ```bash
-   cd barret-magic
-   python3 -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install openpyxl
+   npm run update-data
    ```
-3. Executa el script de conversió:
-   ```bash
-   python convert_excel.py
-   ```
+4. Refresca el navegador amb **Cmd+Shift+R** (Mac) o **Ctrl+Shift+R** (Win/Linux)
+
+**Important**: El venv Python ja està configurat a `../venv/`. Si no existeix, crea'l primer:
+```bash
+cd .. # des de barret-magic, puja un nivell
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install openpyxl
+cd barret-magic
+```
+
+### Format de l'Excel
+L'Excel ha de tenir aquestes columnes:
+1. **Nom**: Nom complet
+2. **Àlies (pinyes)**: Nom curt
+3. **Frase del barret**: Text revelació
+4. **Context**: Descripció
+5. **Categoria**: Muixelovers | FOMO de Ferro | Talents emergents | Comboiet
 
 ## ❓ Problemes comuns
 

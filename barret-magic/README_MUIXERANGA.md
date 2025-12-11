@@ -61,17 +61,36 @@ npm start -- --port 4201
 
 ## 📊 Dades
 
-Les dades dels membres estan a `public/members.json`. Aquest fitxer es genera automàticament des de l'Excel original.
+Les dades dels membres estan a `public/members.json` i es generen automàticament des de l'Excel `barret_magic_muixeranga_COMPLET.xlsx`.
 
-Per actualitzar les dades:
-1. Modifica l'Excel `barret_magic_muixeranga_COMPLET.xlsx`
-2. Executa el script de conversió:
-   ```bash
-   cd ..
-   source venv/bin/activate
-   python convert_excel.py
-   cp members.json barret-magic/public/
-   ```
+### Actualitzar les dades
+
+**Mètode fàcil (recomanat):**
+```bash
+npm run update-data
+```
+
+Això executarà automàticament l'script Python que:
+1. Llegeix l'Excel `../barret_magic_muixeranga_COMPLET.xlsx`
+2. Genera `public/members.json`
+3. Copia el fitxer a `src/assets/members.json`
+
+Després, refresca el navegador amb **Cmd+Shift+R** (Mac) o **Ctrl+Shift+R** (Win/Linux).
+
+**Mètode manual:**
+```bash
+cd barret-magic
+../venv/bin/python convert_excel.py
+```
+
+### Format de l'Excel
+
+L'Excel ha de tenir les següents columnes (en aquest ordre):
+1. **Nom**: Nom complet del membre
+2. **Àlies (pinyes)**: Nom curt o àlies
+3. **Frase del barret**: Text que es mostra al clicar
+4. **Context**: Descripció contextual
+5. **Categoria**: Muixelovers | FOMO de Ferro | Talents emergents | Comboiet
 
 ## 🔧 Configuració
 

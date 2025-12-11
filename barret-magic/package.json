@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "update-data": "../venv/bin/python convert_excel.py"
   },
   "prettier": {
     "printWidth": 100,
