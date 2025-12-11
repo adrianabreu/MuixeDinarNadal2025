@@ -51,7 +51,7 @@
 .members-grid {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
   padding: 0 1rem;
@@ -80,6 +80,14 @@
   transition: all 0.4s ease;
   box-shadow: 0 20px 60px rgba(255, 63, 50, 0.6);
   z-index: 10;
+  max-width: min(95vw, 800px);
+}
+
+@media (max-width: 768px) {
+  .member-active {
+    transform: scale(1);
+    max-width: 95vw;
+  }
 }
 
 /* Botons de navegació */
