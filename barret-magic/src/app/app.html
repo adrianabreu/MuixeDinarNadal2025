@@ -2,8 +2,12 @@
   <!-- PANTALLA D'INICI -->
   <div class="intro-screen" *ngIf="currentScreen === 'intro'">
     <div class="intro-content">
-      <h1 class="intro-title">🎩 Barret Màgic Muixeranguer 🎩</h1>
-      <p class="intro-subtitle">Dinar de Nadal 2025</p>
+      <h1 class="intro-title">
+        <span class="hat-left">🎩</span>
+        <span class="title-text">Barret Màgic Muixeranguer</span>
+        <span class="hat-right">🎩</span>
+      </h1>
+      <p class="intro-subtitle"><em>Dinar de Nadal 2025</em></p>
       <p class="intro-subtitle">Muixeranga de Barcelona</p>
       
       <div class="intro-description">
@@ -28,8 +32,12 @@
   <div class="game-screen" *ngIf="currentScreen === 'game'">
     <!-- Capçalera -->
     <header class="header">
-      <h1 class="title">🎩 Barret Màgic Muixeranguer 🎩</h1>
-      <p class="subtitle">Dinar de Nadal 2025 - Muixeranga de Barcelona</p>
+      <h1 class="title">
+        <span class="hat-left">🎩</span>
+        <span class="title-text">Barret Màgic Muixeranguer</span>
+        <span class="hat-right">🎩</span>
+      </h1>
+      <p class="subtitle"><em>Dinar de Nadal 2025</em> - Muixeranga de Barcelona</p>
       <div class="group-info">
         Grup {{ currentGroupIndex + 1 }} de {{ totalGroups }}
       </div>
