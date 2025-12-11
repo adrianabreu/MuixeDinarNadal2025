@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { MemberCardComponent, Member } from './member-card.component';
 
+type Screen = 'intro' | 'game' | 'results';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,11 +16,20 @@ export class AppComponent implements OnInit {
   // Constant per definir quantes persones per grup
   private readonly MEMBERS_PER_GROUP = 4;
 
+  // Control de pantalla
+  currentScreen: Screen = 'intro';
+
   // Dades
   allMembers: Member[] = [];
   currentGroupIndex = 0;
   currentGroup: Member[] = [];
   totalGroups = 0;
+
+  // Resultats: membre seleccionat
+  selectedMember: Member | null = null;
+
+  // Game screen: membre actiu (en procés de revelació)
+  activeMember: Member | null = null;
 
   constructor(private http: HttpClient) {}
 
@@ -91,5 +102,98 @@ export class AppComponent implements OnInit {
    */
   isLastGroup(): boolean {
     return this.currentGroupIndex === this.totalGroups - 1;
+  }
+
+  /**
+   * Canvia de pantalla
+   */
+  goToScreen(screen: Screen): void {
+    this.currentScreen = screen;
+    if (screen !== 'results') {
+      this.selectedMember = null;
+    }
+  }
+
+  /**
+   * Navega al següent grup o mostra els resultats finals
+   */
+  nextGroupOrResults(): void {
+    if (this.isLastGroup()) {
+      this.goToScreen('results');
+    } else {
+      this.nextGroup();
+    }
+  }
+
+  /**
+   * Obté el recompte per categories amb els membres
+   */
+  getCategoryCounts(): { categoria: string; count: number; color: string; members: Member[] }[] {
+    const groups = new Map<string, Member[]>();
+    
+    this.allMembers.forEach(member => {
+      const members = groups.get(member.categoria) || [];
+      members.push(member);
+      groups.set(member.categoria, members);
+    });
+
+    const colors: { [key: string]: string } = {
+      'Muixelovers': '#FF3F32',
+      'FOMO de Ferro': '#19C7E6',
+      'Talents emergents': '#4CAF50',
+      'Comboiet': '#FFC107'
+    };
+
+    return Array.from(groups.entries()).map(([categoria, members]) => ({
+      categoria,
+      count: members.length,
+      color: colors[categoria] || '#666',
+      members
+    }));
+  }
+
+  /**
+   * Selecciona o deselecciona un membre
+   */
+  toggleMemberSelection(member: Member): void {
+    if (this.selectedMember === member) {
+      this.selectedMember = null;
+    } else {
+      this.selectedMember = member;
+    }
+  }
+
+  /**
+   * Comprova si un membre està seleccionat
+   */
+  isMemberSelected(member: Member): boolean {
+    return this.selectedMember === member;
+  }
+
+  /**
+   * Comprova si hi ha algun membre seleccionat
+   */
+  hasSelectedMember(): boolean {
+    return this.selectedMember !== null;
+  }
+
+  /**
+   * Gestiona el canvi d'estat de revelació d'un membre
+   */
+  onMemberRevealChange(event: { member: Member; state: number }): void {
+    if (event.state === 0) {
+      // Si torna a 0, ja no hi ha membre actiu
+      this.activeMember = null;
+    } else {
+      // Si està en procés de revelació (1 o 2), és el membre actiu
+      this.activeMember = event.member;
+    }
+  }
+
+  /**
+   * Comprova si un membre està amagat (perquè n'hi ha un altre actiu)
+   */
+  isMemberHidden(member: Member): boolean {
+    return this.activeMember !== null && this.activeMember !== member;
   }
 }

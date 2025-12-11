@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 export interface Member {
@@ -18,12 +18,14 @@ export interface Member {
 })
 export class MemberCardComponent {
   @Input() member!: Member;
+  @Output() revealStateChange = new EventEmitter<{ member: Member; state: number }>();
   
   // Estats: 0 = només àlies, 1 = àlies + frase, 2 = àlies + frase + categoria
   revealState = 0;
 
   toggleReveal(): void {
     this.revealState = (this.revealState + 1) % 3;
+    this.revealStateChange.emit({ member: this.member, state: this.revealState });
   }
 
   getCategoryColor(): string {
