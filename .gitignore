@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Angular
+.angular/
+dist/
+tmp/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Zip files (opcional, ja que és generat)
+*.zip
+
