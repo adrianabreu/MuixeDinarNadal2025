@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/MuixeDinarNadal2025/",
               "budgets": [
                 {
                   "type": "initial",
