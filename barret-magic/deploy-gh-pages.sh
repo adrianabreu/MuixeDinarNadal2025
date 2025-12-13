@@ -96,8 +96,8 @@ find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'dist' -exec rm -rf {} +
 
 # Copy build files to root
 echo -e "${GREEN}📋 Copying build files to root...${NC}"
-cp -r "$BUILD_DIR"/* .
-cp -r "$BUILD_DIR"/.* . 2>/dev/null || true
+cp -r "$BUILD_DIR"/* ../
+cp -r "$BUILD_DIR"/.* ../ 2>/dev/null || true
 
 # Remove dist folder
 rm -rf dist
