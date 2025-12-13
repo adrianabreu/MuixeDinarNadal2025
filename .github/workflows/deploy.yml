@@ -1,0 +1,82 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: barret-magic/package-lock.json
+
+      - name: Install dependencies
+        working-directory: barret-magic
+        run: npm ci
+
+      - name: Build Angular app
+        working-directory: barret-magic
+        run: npm run build -- --configuration production
+
+      - name: Find build output directory
+        id: find-build
+        working-directory: barret-magic
+        run: |
+          if [ -d "dist/barret-magic/browser" ]; then
+            echo "BUILD_DIR=dist/barret-magic/browser" >> $GITHUB_OUTPUT
+          elif [ -d "dist/barret-magic" ]; then
+            echo "BUILD_DIR=dist/barret-magic" >> $GITHUB_OUTPUT
+          elif [ -d "dist/browser" ]; then
+            echo "BUILD_DIR=dist/browser" >> $GITHUB_OUTPUT
+          else
+            echo "BUILD_DIR=dist" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout or create gh-pages branch
+        run: |
+          if git show-ref --verify --quiet refs/heads/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf --cached . 2>/dev/null || true
+          fi
+
+      - name: Clean gh-pages branch
+        run: |
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'barret-magic' -exec rm -rf {} + || true
+
+      - name: Copy build files to root
+        working-directory: barret-magic
+        run: |
+          cp -r ${{ steps.find-build.outputs.BUILD_DIR }}/* ../ || true
+          cp -r ${{ steps.find-build.outputs.BUILD_DIR }}/.* ../ 2>/dev/null || true
+
+      - name: Remove dist folder
+        working-directory: barret-magic
+        run: rm -rf dist
+
+      - name: Commit and push to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "Deploy to GitHub Pages - $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty
+            git push origin gh-pages --force
+          fi
+
