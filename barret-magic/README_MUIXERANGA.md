@@ -133,3 +133,4 @@ Que la dinàmica sigui un èxit i que passeu una molt bona estona!
 
 *Creat amb ❤️ per la Muixeranga de Barcelona*
 
+

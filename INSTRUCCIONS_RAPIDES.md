@@ -113,3 +113,4 @@ Que la dinàmica sigui un èxit i que passeu una molt bona estona!
 
 *Visca la Muixeranga de Barcelona! 🎊*
 
+

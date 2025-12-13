@@ -10,8 +10,8 @@
     "nom": "Míriam",
     "alias": "Míriam",
     "context": "Míriam… cos petit, cor enorme i sempre amunt: el barret et veu com una companya imprescindible quan tot s’enfila cap al cel…",
-    "fraseBarret": "Petita alçadora amb un cor molt gran, forma part de la Junta i és la vicepresidenta.",
-    "categoria": "Muixelovers"
+    "fraseBarret": "Petita alçadora amb un cor molt gran, forma part de la Junta i és la secretaria. Sempre disposada a fer feina i a estar de festa",
+    "categoria": "Comboiet"
   },
   {
     "nom": "Laia Ferrando",
@@ -25,21 +25,21 @@
     "alias": "Marta",
     "context": "Marta Peris… mestra de persones i figures, sempre al peu del canó: el barret t’assenyala clarament com a ànima tranquil·la enmig de la tempesta…",
     "fraseBarret": "Mestra de la colla, sempre amb un somriure, una paraula amable i cuidant a la gent.",
-    "categoria": "Muixelovers"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Iván Garnelo",
     "alias": "Iván",
     "context": "Iván Garnelo… idees infinites i paraules sense límit: el barret et deixa al centre del soroll, on les xapes es convertixen en saviesa compartida…",
     "fraseBarret": "Últim guanyador del Premi Xapes, molt disposat a treballar per la colla, molt intel·ligent i molt bona persona, però un poquet xapes, sempre parlant.",
-    "categoria": "Comboiet"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Eva Moliner",
     "alias": "Moliner",
     "context": "Eva Moliner… qui cuida la xicalla cuida el futur: el barret t’abraça i et recorda que sense tu moltes figures ni tan sols començarien…",
     "fraseBarret": "Cap de xicalla, cuida els xiquets i xiquetes i millora constantment per fer les millors figures.",
-    "categoria": "Muixelovers"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Pepelu",
@@ -60,19 +60,19 @@
     "alias": "Roger",
     "context": "Roger… nou però ja imprescindible, compromès i rialler: el barret et veu com un somriure recent arribat que ja sembla de tota la vida…",
     "fraseBarret": "Talent emergent molt compromès, català i molt divertit, sempre amb un somriure a la cara.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Joanot",
     "alias": "Joanot",
-    "context": "Joanot… alçada, memes i amor per la terra: el barret et llança directe al centre del convit, on mai falta festa ni pinya ni crits de la Safor i Castelló…",
+    "context": "Joanot… més alt que mig País Valencià i més memero que tot Twitter: el barret sap que, si tu ets a plaça, hi haurà pinya, festa i algun crit entre Castelló i Catalunya…",
     "fraseBarret": "Castellonenc, enamorat del País Valencià i de Catalunya, cap de pinyes, dels més alts de la colla, una ‘loca’ estimada, rei dels memes i molt divertit; referent des de fa anys.",
     "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Jordi",
     "alias": "Jordi",
-    "context": "“Jordi… memes infinits, pinyes i festa fins al final: el barret et proclama veu de fons de totes les nits llargues de la colla…”",
+    "context": "Jordi… rei del bon rotllo, dels memes als assajos i del punkrock als festivals; quan obri la boca, la colla ja sap que toca riure…",
     "fraseBarret": "Rei dels memes, tothom vol escoltar-lo perquè sempre hi ha alguna cosa graciosa darrere de les seues paraules; cap de pinyes i enamorat del projecte des de fa temps; molt estimat i sempre fins al final de les festes.",
     "categoria": "FOMO de Ferro"
   },
@@ -81,7 +81,7 @@
     "alias": "Celia",
     "context": "Celia… somriure, creixement i lluita feminista: el barret et veu com un far petit però constant que il·lumina camins nous…",
     "fraseBarret": "Talent emergent, evoluciona molt ràpidament, sempre amb un somriure i forma part de la comissió feminista.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Meritxell",
@@ -116,28 +116,28 @@
     "alias": "Peña",
     "context": "Peña… explosió d’energia, pinya i il·lusió tècnica: el barret et veu com un motor encés que no sap què és el fre…",
     "fraseBarret": "Cap de pinyes, caràcter explosiu, enamorada de la muixeranga, molt optimista i gran talent emergent ja dins l’equip tècnic.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "irene bolu",
     "alias": "Bolu",
     "context": "Irene Bolu… reptes, energia i futur als ulls: el barret et tria com a promesa que ja comença a sonar a confirmació…",
     "fraseBarret": "Talent emergent coneguda l’any passat i que enguany es desenvolupa molt ràpidament, aconseguint reptes; és la joventut i energia que necessita la colla.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "David Borrell",
     "alias": "Borrell",
     "context": "David Borrell… alçada, barri i lluita: el barret et fa recordar que hi ha columnes que sostenen molt més que una simple figura…",
     "fraseBarret": "Un dels més alts de la colla, molt bona persona, de la Barceloneta, molt català i sempre en lluita.",
-    "categoria": "Muixelovers"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Alberto",
     "alias": "Alberto",
     "context": "Alberto… nou, fort i amb ganes de festa: el barret et veu claríssim com a fitxatge d’hivern que ha vingut per quedar-se…",
     "fraseBarret": "Talent emergent arribat enguany amb molta força; primeres mans segures i gran afició a la festa.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Laura de Luis",
@@ -156,23 +156,23 @@
   {
     "nom": "Mònica",
     "alias": "Mònica",
-    "context": "Mònica… cada figura al teu cap i cada persona al teu cor: el barret t’assenyala com a arquitecta silenciosa del que passa a plaça…",
+    "context": "Mònica… cada figura al teu cap i cada persona al teu cor: el barret t’assenyala com a arquitecta silenciosa del que passa a plaça i a la festa…",
     "fraseBarret": "Mestra molt compromesa amb tota la colla, es trenca el cap perquè tothom participe i perquè la muixeranga arribe tan alt com ampla a la plaça.",
-    "categoria": "Muixelovers"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Fadi Saati",
     "alias": "Fadi",
     "context": "Fadi… d’Armènia a la plaça, entre memes i reptes nous: el barret et veu com a viatger intrèpid que ja ha trobat una segona casa…",
     "fraseBarret": "D’Armènia, casteller que s’ha sumat a la muixeranga i ja forma part del camí on vol arribar la colla; sempre porta algun meme.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Ester Gimeno",
     "alias": "Ester",
-    "context": "Ester… botes posades, festa a punt i ganes d’encadenar partits i figures: el barret et veu com a esportista de llarg recorregut també entre faixes…",
+    "context": "Ester… futbol a les cames, faixa a la cintura i el cor mig empadronat al País Valencià: el barret sospita que algun dia acabaràs demanant la doble nacionalitat...",
     "fraseBarret": "Futbolista i talent emergent que ve acompanyada i sempre molt festera.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Luca",
@@ -200,35 +200,35 @@
     "alias": "Laiuski",
     "context": "Laiuski… xicalla, compromís i futur als ulls: el barret et tria com a exemple que el demà ja ha arribat i porta faixa…",
     "fraseBarret": "De la Font del Carròs, nou talent emergent de l’any passat, molt compromesa amb la xicalla i amb moltes ganes de seguir; la Iusqui és futur de la colla.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Claraaaa",
     "alias": "Clara",
     "context": "Clara… cada xiquet al cor i un somriure per a cadascú: el barret et veu custodiant la porta d’entrada de la colla més petita…",
     "fraseBarret": "Cap de xicalla, un amor empàtic, molt compromesa amb tots els xiquets i sempre amb un somriure.",
-    "categoria": "Muixelovers"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Olgaaa",
     "alias": "Olga",
     "context": "Olga… de València a Barcelona, dolçor i xicalla a parts iguals: el barret et tria com a pont de sucre entre dos territoris germans…",
     "fraseBarret": "Muixeranguera de la Muixeranga de València enamorada de la Muixeranga de Barcelona; cap de xicalla i molt dolceta.",
-    "categoria": "Muixelovers"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Sofia",
     "alias": "Sofia",
     "context": "Sofia… troncs ferms i amabilitat infinita: el barret et posa en aquella línia fina on la força i la tendresa es donen la mà…",
     "fraseBarret": "Forma part de l’equip de troncs; tan amable que impressiona, sempre té una paraula amable i està disposada a ajudar; l’any passat va ser talent emergent de la colla.",
-    "categoria": "Comboiet"
+    "categoria": "Muixelovers"
   },
   {
     "nom": "Neusin",
     "alias": "Neusin",
     "context": "Neusin… terratrèmol d’amor, emoció i xicalla: el barret et veu com una abraçada que arriba abans fins i tot que les paraules…",
     "fraseBarret": "Terremoto amorós, cap de xicalla i molt emocional; la muixeranga és un projecte que s’ha fet seu i que l’ha fet créixer molt; sempre disposada a ajudar.",
-    "categoria": "Muixelovers"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Pere Ahuir Lloret",
@@ -256,33 +256,33 @@
     "alias": "Guille",
     "context": "Guille... vas i véns de la tècnica, però mai de la colla: el barret et fa guardian silenciós que apareix just quan fa falta una mà més…",
     "fraseBarret": "S’ha deixat la tècnica dues vegades, però sempre està ahí esperant que li demanen qualsevol cosa per ajudar; suport constant des de fora de focus.",
-    "categoria": "Muixelovers"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Victòria",
     "alias": "Victòria",
-    "context": "Victòria… compromís, família i mirada feminista: el barret et tria com a veu serena que recorda per què fem el que fem…",
+    "context": "Victòria… ve en família, entra amb calma i parla amb pes: el barret et veu com aquella veu suau que recorda que sense feminisme la colla es quedaria a mitja alçada…",
     "fraseBarret": "Molt compromesa des de l’any passat, forma part de la comissió feminista i ve en família a la muixeranga, sempre amb un to molt amable.",
     "categoria": "Muixelovers"
   },
   {
     "nom": "Sandra",
     "alias": "Sandra",
-    "context": "Sandra… elevadora revelació i figures que fan història: el barret et veu com a peça clau d’aquelles fotos que mirarem d’aquí uns anys…",
+    "context": "Sandra… d’Alginet, de la zona muixeranguera a descobrir-ho tot a BCN: el barret sap que el teu somriure sempre hi és",
     "fraseBarret": "Talent emergent que va començar l’any passat; elevadora revelació que ha posat en el mapa el jinete Terra de muixerangues.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Juds",
     "alias": "Juds",
     "context": "Juds… bata invisible, cures i riure contagiós: el barret et declara escut sanitari i emocional a parts iguals…",
     "fraseBarret": "Forma part de la comissió sanitària, catalana de l’Hospitalet, amb un riure molt contagiós; cuida de tota la colla a nivell de salut.",
-    "categoria": "Muixelovers"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Maria Diez",
     "alias": "Maria",
-    "context": "Maria Díez… alçada basca i empenta feminista: el barret et col·loca a la línia on el cos obre camí per a moltes altres dones…",
+    "context": "Maria Díez… des de Legazpi fins a la plaça, alçada basca i empenta infinita: el barret sap que has obert la porta a figures de dones que abans ni tan sols s’imaginaven…",
     "fraseBarret": "La nòvia més alta de la colla, d’Euskal Herria; ha posat en valor la muixeranga al País Basc i ha ajudat a fer figures de dones que abans no es feien.",
     "categoria": "Muixelovers"
   },
@@ -291,49 +291,49 @@
     "alias": "Isabel",
     "context": "Isabel… petita d’alçada però gegant en somriures: el barret et veu com a espurna que encén la confiança als primers intents…",
     "fraseBarret": "Talent emergent, persona petita i amable, sempre amb un somriure.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Josep (Fumat)",
     "alias": "Fumat",
-    "context": "Fumat… xicalla, sud i castells a la sang: el barret et veu com a pont entre tradicions, rialles i generacions…",
+    "context": "Fumat… xicalla, sud i Castalla a la sang: el barret et veu com el pont perfecte entre rialles menudes i tradicions ben grosses…",
     "fraseBarret": "Nou en l’equip de xicalla, amant dels xiquets i xiquetes i del sud del País Valencià, terra de castells.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Amaranta",
     "alias": "Amaranta",
-    "context": "Amaranta… Betis, festa i faixa sense descans: el barret et proclama tempesta de colors verd-i-blanc en qualsevol barra de bar…",
+    "context": "Amaranta… sevillana del Betis, festa fina i faixa apretada: el barret sap que allà on tu arribes hi haurà color, ritme i algú que s’anime una mica més…",
     "fraseBarret": "En guany és sense dubte el fetge de festa; li agrada la festa, participar i la muixeranga; sevillana del Betis que no deixa ningú indiferent.",
     "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Selena lopez perez",
     "alias": "Selena",
-    "context": "Selena… escenari abans que assaig, somriure abans que tot: el barret et deixa a la primera fila, allà on sempre passa alguna cosa divertida…",
+    "context": "Selena… sempre a primera fila quan hi ha actuació o festa, això ens encanta: el barret sap que t’estem reservant un raconet al costat de Sònia...",
     "fraseBarret": "Fa temps que intentem col·locar-la a prop de Sònia per muntar un grup de música; no es perd cap actuació, els assajos li costen més, però aquell somriure ho compensa.",
-    "categoria": "FOMO de Ferro"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Nius",
     "alias": "Nius",
     "context": "Nius… xicalla, ajuda i somriure constant: el barret et tria com aquella presència que fa que res semble tan difícil…",
     "fraseBarret": "Ajudanta de xicalla i amant dels xiquets i xiquetes; sempre amb somriure i ganes d’ajudar.",
-    "categoria": "Muixelovers"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Llorenç",
     "alias": "Llorenç",
-    "context": "Llorenç… mestre, motor i enamorat del projecte: el barret et proclama cervell, cor i cronista d’esta petita bogeria col·lectiva…",
+    "context": "Llorenç…  exmestre, motor i enamorat del projecte: el barret et proclama cervell, cor i cronista d’esta petita bogeria col·lectiva…",
     "fraseBarret": "Qui està preparant la dinàmica; amant de Laura, la seua companya; va ser mestre de la muixeranga l’any passat i li agrada ajudar perquè el projecte avance.",
-    "categoria": "Muixelovers"
+    "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Mireia Romaguera i Montañola",
-    "alias": "Mireia",
+    "alias": "Romaguera",
     "context": "Mireia… plaça compartida entre castells i muixerangues: el barret et posa a la frontera amable on les colles es fan cosines…",
     "fraseBarret": "Sempre que pot ve a actuacions i assajos; castellera espectacular de l’Esquerra de l’Eixample.",
-    "categoria": "Comboiet"
+    "categoria": "Muixelovers"
   },
   {
     "nom": "Sergi Pastor",
@@ -345,30 +345,30 @@
   {
     "nom": "Miguel Hortelano",
     "alias": "Hortelano",
-    "context": "Hortelano… serietat, constància i feina ben feta: el barret et veu com a exemple que els passos petits fan figures enormes…",
+    "context": "Hortelano… seriós, constant i sense grans discursos: el barret sap que el teu estil és senzill, però que gràcies a això les coses, al final, surten…",
     "fraseBarret": "Fa temps que està a la colla; seriós però constant, ha aconseguit les proves que li han posat amb treball i dedicació.",
     "categoria": "Muixelovers"
   },
   {
     "nom": "Robert",
     "alias": "Robert",
-    "context": "Robert… dels inicis i sempre present encara que siga des de fora: el barret et manté a la sala de màquines dels records compartits…",
+    "context": "Robert… dels inicis i sempre present encara que siga des de fora: el barret et manté com a reserva activa i a la sala de màquines dels records compartits…",
     "fraseBarret": "Ara no està a les pinyes però forma part dels inicis del projecte; s’espera tornar a veure’l prop d’una pinya.",
     "categoria": "Muixelovers"
   },
   {
     "nom": "Cubero",
     "alias": "Cubero",
-    "context": "“Cubero… cançons, paelles i missatges d’amor nocturns: el barret et proclama barda oficial de la colla, amb cassola i guitarra a punt…”",
+    "context": "Cubero… valencià de cor, d’Hospitalet de DNI, entre cassola i guitarra: el barret et veu com aquell que després de cuinar-te una paella encara té forces per dedicar-te una cançó…",
     "fraseBarret": "Músic de la colla, ha fet una cançó per a vosaltres; arriba sovint borratxet a casa i envia missatges amorosos a la colla. Amant de la cuina i la paella; valencià de cor però d’Hospitalet.",
     "categoria": "FOMO de Ferro"
   },
   {
     "nom": "Ferran Rosell",
-    "alias": "Ferran Rosell",
+    "alias": "Rosell",
     "context": "“Ferran Rosell… orellut, compromès i sempre fent ponts amb Sants: el barret et veu com a emissari de bona voluntat entre faixes germanes…”",
     "fraseBarret": "De Castelló de la Plana i del CD Castelló; talent emergent que des de l’any passat ho està donant tot i ha obert molts llaços amb els castellers de Sants.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Paloma",
@@ -387,9 +387,9 @@
   {
     "nom": "Maria Franch (Mafra)",
     "alias": "Mafra",
-    "context": "“Mafra… diamant en brut, alçadora amb molt futur: el barret et veu com a peça que encara s’està tallant però ja brilla des de lluny…”",
+    "context": "Mafra… encara et coneixem poc, però cada vegada que véns deixes bon rotllo i ganes de tornar-te a veure: el barret confia que aquesta història tot just comença…",
     "fraseBarret": "Talent emergent, un diamant per descobrir, amb un perfil molt bo d’alçadora i molt per aportar els pròxims mesos.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Amparo Prades",
@@ -401,9 +401,9 @@
   {
     "nom": "Ferran",
     "alias": "Ferran",
-    "context": "“Ferran… taladre, desfase i llegenda viva de la festa: el barret et proclama protagonista d’aquelles nits que ningú acaba d’explicar senceres…”",
+    "context": "Ferran… el taladre o el bastó de mestre dirigint pinyes de guasa: el barret sap que vas ser el personatge de l’any passat, però també que enguany t’ho faran suar…",
     "fraseBarret": "L’any passat va guanyar el premi al personatge de l’any (molt disputat amb Carles); amb el seu desfase de festa i el taladre guanyat en un concurs sempre deixa tothom bocabadat.",
-    "categoria": "FOMO de Ferro"
+    "categoria": "Comboiet"
   },
   {
     "nom": "Shannon",
@@ -415,7 +415,7 @@
   {
     "nom": "Enric (Lloret)",
     "alias": "Lloret",
-    "context": "Lloret… saforí, graciós i una mica desaparegut de tant en tant: el barret et declara cometa que apareix per il·luminar un parell de nits l’any…",
+    "context": "Lloret… saforí de Sueca, pare de família i rei dels comentaris buró: el barret sap que, encara que de vegades desaparegues a última hora, cada vegada que véns la gràcia puja dos pisos…",
     "fraseBarret": "El tio més salat de la colla, pare de família, molt divertit, de la Safor, cor del País Valencià; de vegades us deixa tirats a última hora, però la seua presència sempre paga la pena.",
     "categoria": "Comboiet"
   },
@@ -431,21 +431,21 @@
     "alias": "Alfred",
     "context": "Alfred… joventut castellonenca i ofici de La Plana: el barret et veu com a record vivent que el poble sempre es porta a sobre…",
     "fraseBarret": "Fins fa poc el més jove de la colla; castellonenc que abans feia Muixeranga La Plana, amb trajectòria i arrels muixerangueres.",
-    "categoria": "Muixelovers"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Gerard Blasco",
     "alias": "Gerard",
-    "context": "Gerard… Sueca al cor, hiperactivitat amable i sempre un pla nou: el barret et posa en temporada permanent de propostes i improvisacions…",
+    "context": "Gerard… professor i reclutador oficial de Sueca: el barret sap que en qualsevol moment pots treure un monòleg per a la colla com qui treu una faixa de la motxilla…",
     "fraseBarret": "Saforenc de Sueca, on el valencià no és cap dubte; improvisador i hiperactiu amable, ha portat família i alumnes a la muixeranga.",
     "categoria": "Comboiet"
   },
   {
     "nom": "Wendy Sawadogo",
     "alias": "Wendy",
-    "context": "Wendy… aire fresc, pas ferm i futur per escriure: el barret et veu com a pàgina en blanc plena de possibilitats muixerangueres…",
+    "context": "Wendy… talent emergent, estil propi i molta cosa per dir encara: el barret sap que la colla ha fet un molt bon fitxatge i que això només és el començament…",
     "fraseBarret": "Talent emergent que aporta aire fresc a la colla; teniu molt bones expectatives posades en ella.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Núria Porcar",
@@ -459,14 +459,14 @@
     "alias": "Blai",
     "context": "Blai… quatre anyets i mil idees al cap: el barret et proclama narrador en miniatura de coses que els adults ni tan sols veiem…",
     "fraseBarret": "Fill de Núria, xicalla i futur de la colla; sempre diu coses molt curioses tot i tindre quatre anys, és un amor.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Aloma - xicalla",
     "alias": "Aloma",
     "context": "Aloma… curiositat als ulls i enamorament en marxa: el barret et veu com a llavor que ja ha trobat la seua terra…",
     "fraseBarret": "Xiqueta que comença a enamorar-se de la muixeranga; tota la colla té molta il·lusió que li agrade cada vegada més i s’integre.",
-    "categoria": "Talents emergents"
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Pol - xicalla",
@@ -495,5 +495,96 @@
     "context": "Martí… energia desbordada i mans de músic en potència: el barret et col·loca a la banda sonora sorollosa però imprescindible de la colla…",
     "fraseBarret": "Fill de Lina i Lloret; és un terremoto, potser no és el xiquet que més li agrada la muixeranga, però si li dones un tabal serà el vostre músic. Molt estimat per tothom.",
     "categoria": "Comboiet"
+  },
+  {
+    "nom": "Alejandro Blasco",
+    "alias": "Blasco",
+    "context": "Blasco… germà de Sueca, somriure de casa i energia de novençà: el barret et mira i pensa “a veure quan ve el pròxim Blasco al pack”…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Francesc Poblet",
+    "alias": "Francesc",
+    "context": "Francesc… de Vinaròs al món, castells a Barcelona i Berlín, esperanto i cultura: el barret et veu tornant a unes arrels que mai havies perdut del tot…",
+    "fraseBarret": null,
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Xavi Barona",
+    "alias": "Barona",
+    "context": "Barona… parles poc però ho aguantes tot: el barret et mira i pensa “aquest fa més feina de la que sembla des de fora”…",
+    "fraseBarret": null,
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Joan Enric",
+    "alias": "Joan Enric",
+    "context": "Joan Enric… mallorquí de pura raça, vicepresident i motor de bon humor: el barret et veu com aquell que porta un tros de Mallorca a cada assaig i a cada festa…",
+    "fraseBarret": null,
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Francesc Villar",
+    "alias": "Fran",
+    "context": "Fran… del Mas Nou a la pinya, de públic a protagonista, amic dels animals i cor gegant: el barret et somriu perquè la colla s'alegra quan estas tú…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Antonia Adasme",
+    "alias": "Antonia",
+    "context": "Antonia… de Xile a la faixa, català perfecte i rialla alta com tu: el barret et mira i veu un any ple de descobriments i moltes places per trepitjar…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Karen Gutierrez",
+    "alias": "Karen",
+    "context": "Karen… nova incorporació, alegria a flor de pell i cos de futur baix: el barret et sent arribar i sap que has vingut per quedar-te i aguantar-ho tot…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Lola Capilla",
+    "alias": "Lola",
+    "context": "Lola… poca alçada i moltes ganes, d’Elx i sempre batalladora, aprenent pas a pas: el barret et veu com una espurna que cada vegada va més caliu…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Irene",
+    "alias": "Irene",
+    "context": "Irene… de la Safor, alçadora i bastonera valenta. Sempre aportant plans i suport: el barret et reconeix com aquella que sosté no només figures, sinó també cultura i tradició…",
+    "fraseBarret": null,
+    "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Arantxa",
+    "alias": "Arantxa",
+    "context": "Arantxa… arribes discreta i acabes plena de somriures: el barret et mira i pensa “aquesta sap entrar en escena en el moment perfecte”…",
+    "fraseBarret": null,
+    "categoria": "Muixelovers"
+  },
+  {
+    "nom": "Anna Climent",
+    "alias": "Climent",
+    "context": "Climent… riure inconfusible i contagiós, una alegria que s’encomana, màster de comunicació i de comboi: el barret sap que si tu parles, la colla escolta i riu…",
+    "fraseBarret": null,
+    "categoria": "Comboiet"
+  },
+  {
+    "nom": "Aitana Fabregat",
+    "alias": "Fabregat",
+    "context": "Fabregat… entre Castelló i Vinaròs, una mica tímida però plena d’agraïment, comissió sanitària i somriure constant: el barret et veu com la calma que cuida a tothom…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Sònia",
+    "alias": "Sònia",
+    "context": "Sònia… reina dels xupitos, discreta però infal·lible, amiga perfecta de festa i peça clau a la junta: el barret sap que al teu costat la nit sempre té una energia especial…",
+    "fraseBarret": null,
+    "categoria": "FOMO de Ferro"
   }
 ]
