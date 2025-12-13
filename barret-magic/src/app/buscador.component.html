@@ -1,0 +1,67 @@
+<div class="buscador-container">
+  <header class="buscador-header">
+    <h1 class="buscador-title">
+      <span class="icon">🔍</span>
+      <span class="title-text">Buscador de Persones</span>
+    </h1>
+    <p class="buscador-subtitle">Cerca per nom o àlies</p>
+  </header>
+
+  <div class="search-section">
+    <div class="search-box">
+      <input 
+        type="text" 
+        class="search-input"
+        [(ngModel)]="searchTerm"
+        (ngModelChange)="onSearchChange()"
+        placeholder="Escriu un nom o àlies..."
+        autofocus>
+      <button 
+        class="clear-button" 
+        *ngIf="searchTerm"
+        (click)="searchTerm = ''; onSearchChange()">
+        ✕
+      </button>
+    </div>
+    
+    <div class="search-info">
+      <span class="result-count">
+        {{ filteredMembers.length }} {{ filteredMembers.length === 1 ? 'persona trobada' : 'persones trobades' }}
+      </span>
+    </div>
+  </div>
+
+  <div class="results-section">
+    <div class="members-list">
+      <div 
+        class="member-result" 
+        *ngFor="let member of filteredMembers"
+        [style.border-left-color]="getCategoryColor(member.categoria)">
+        <div class="member-info">
+          <div class="member-alias">{{ member.alias }}</div>
+          <div class="member-name">{{ member.nom }}</div>
+          <div class="member-frase">"{{ member.fraseBarret }}"</div>
+        </div>
+        <div 
+          class="member-category"
+          [style.color]="getCategoryColor(member.categoria)">
+          {{ member.categoria }}
+        </div>
+      </div>
+      
+      <div class="no-results" *ngIf="filteredMembers.length === 0">
+        <p>😕 No s'ha trobat cap persona</p>
+        <p class="hint">Prova amb un altre nom o àlies</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="buscador-footer">
+    <button class="nav-button" (click)="goBack()">
+      🏠 Tornar a l'Inici
+    </button>
+    <button class="nav-button" (click)="goToResults()">
+      🏆 Veure Resultats
+    </button>
+  </footer>
+</div>
