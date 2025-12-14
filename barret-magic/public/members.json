@@ -471,7 +471,7 @@
   {
     "nom": "Pol - xicalla",
     "alias": "Pol",
-    "context": "Pol… enano de naixement muixeranguer, broma constant i carisma infantil: el barret et posa al centre de totes les rialles petites…",
+    "context": "Pol… quasi més amic dels grans que dels xiquets, nominat a personatge de l’any i sempre parlant de futbol: el barret sap que ets el menut que té la colla sencera enamorada…",
     "fraseBarret": "Un dels grans personatges de la colla; el més divertit dels xiquets, criat entre muixerangues des que és molt menut, sempre gastant bromes i molt estimat.",
     "categoria": "Comboiet"
   },
@@ -494,7 +494,21 @@
     "alias": "Martí",
     "context": "Martí… energia desbordada i mans de músic en potència: el barret et col·loca a la banda sonora sorollosa però imprescindible de la colla…",
     "fraseBarret": "Fill de Lina i Lloret; és un terremoto, potser no és el xiquet que més li agrada la muixeranga, però si li dones un tabal serà el vostre músic. Molt estimat per tothom.",
-    "categoria": "Comboiet"
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Guillem - Xicalla",
+    "alias": "Guillem",
+    "context": "Guillem… mig xiquet, mig guardaespatlles de Biel, amic inseparable de Martí: el barret sap que, si tu mires enrere, és per assegurar-te que els altres dos no es queden enrere a l’aventura…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Biel - Xicalla",
+    "alias": "Biel",
+    "context": "Biel… germà menut però valent, copiant-ho tot i millorant-ho: el barret somriu quan et veu fent pilars de 3 caminats, com si fora el joc més fàcil del món…",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
   },
   {
     "nom": "Alejandro Blasco",
