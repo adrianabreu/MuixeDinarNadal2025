@@ -1,0 +1,25 @@
+<div class="member-card" (click)="handleClick()">
+  <!-- Àlies - sempre visible -->
+  <div class="alias">{{ member.alias }}</div>
+
+  <!-- Frase del barret - visible si revealState >= 1 -->
+  <div class="frase" *ngIf="revealState >= 1">
+    <p>{{ member.context }}</p>
+  </div>
+
+  <!-- Categoria - visible si revealState === 2 -->
+  <div 
+    class="categoria" 
+    *ngIf="revealState === 2" 
+    [style.background-color]="getCategoryColor()">
+    <h3>{{ member.categoria }}</h3>
+  </div>
+
+  <!-- Focs artificials -->
+  <div class="fireworks-container" *ngIf="revealState === 2">
+    <div class="firework" [style.--firework-color]="getCategoryColor()"></div>
+    <div class="firework firework-2" [style.--firework-color]="getCategoryColor()"></div>
+    <div class="firework firework-3" [style.--firework-color]="getCategoryColor()"></div>
+  </div>
+</div>
+

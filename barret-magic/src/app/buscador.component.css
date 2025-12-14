@@ -1,0 +1,245 @@
+.buscador-container {
+  height: 100vh;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.buscador-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buscador-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buscador-title .icon {
+  font-size: 2rem;
+}
+
+.title-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.buscador-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.clear-button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ddd;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.clear-button:hover {
+  background: #bbb;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.search-info {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.result-count {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.results-section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.members-list {
+  display: grid;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.member-result {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.member-result:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.member-alias {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.member-name {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.member-frase {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+.member-category {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+}
+
+.no-results p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-results .hint {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.buscador-footer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  background: white;
+  color: #667eea;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .buscador-container {
+    padding: 1rem;
+  }
+
+  .buscador-title {
+    font-size: 1.8rem;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    padding: 0.9rem 3rem 0.9rem 1.2rem;
+  }
+
+  .member-result {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .member-category {
+    align-self: flex-start;
+  }
+
+  .buscador-footer {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+}

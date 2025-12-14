@@ -1,0 +1,159 @@
+<div class="app-container">
+  <!-- PANTALLA D'INICI -->
+  <div class="intro-screen" *ngIf="currentScreen === 'intro'">
+    <div class="intro-content">
+      <h1 class="intro-title">
+        <span class="hat-left">🎩</span>
+        <span class="title-text">Barret Màgic Muixeranguer</span>
+        <span class="hat-right">🎩</span>
+      </h1>
+      <p class="intro-subtitle"><em>Dinar de Nadal 2025</em></p>
+      <p class="intro-subtitle">Muixeranga de Barcelona</p>
+      
+      <div class="intro-description">
+        <p>Benvinguts i benvingudes a la gran experiència màgica del Dinar de Nadal!</p>
+        <p>El Barret Seleccionador us assignarà a la vostra casa... muixeranguer 🏰</p>
+        <p class="intro-houses">
+          <span class="house-tag muixelovers">🔴 Muixelovers</span>
+          <span class="house-tag fomo">🔵 FOMO de Ferro</span>
+          <span class="house-tag talents">🟢 Talents emergents</span>
+          <span class="house-tag comboiet">🟡 Comboiet</span>
+        </p>
+        <p>Premeu el botó per començar la cerimònia!</p>
+      </div>
+
+      <button class="intro-button" (click)="goToScreen('game')">
+        ✨ Començar la Dinàmica ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- PANTALLA DE JOC (original) -->
+  <div class="game-screen" *ngIf="currentScreen === 'game'">
+    <!-- Capçalera -->
+    <header class="header">
+      <h1 class="title">
+        <span class="hat-left">🎩</span>
+        <span class="title-text">Barret Màgic Muixeranguer</span>
+        <span class="hat-right">🎩</span>
+      </h1>
+      <p class="subtitle"><em>Dinar de Nadal 2025</em> - Muixeranga de Barcelona</p>
+      <div class="group-info">
+        Grup {{ currentGroupIndex + 1 }} de {{ totalGroups }}
+      </div>
+    </header>
+
+    <!-- Zona central amb les targetes dels membres -->
+    <main class="members-grid">
+      <app-member-card 
+        *ngFor="let member of currentGroup" 
+        [member]="member"
+        [isFloating]="false"
+        (cardClick)="openOverlay($event)">
+      </app-member-card>
+    </main>
+
+    <!-- Overlay amb la targeta flotant -->
+    <div class="member-overlay" *ngIf="activeMember" (click)="closeOverlay()">
+      <div class="floating-card" (click)="$event.stopPropagation()">
+        <app-member-card 
+          [member]="activeMember"
+          [isFloating]="true"
+          (revealStateChange)="onMemberRevealChange($event)">
+        </app-member-card>
+      </div>
+    </div>
+
+    <!-- Botons de navegació -->
+    <footer class="navigation">
+      <button 
+        class="nav-button" 
+        (click)="isFirstGroup() ? goToScreen('intro') : reset()">
+        {{ isFirstGroup() ? '🏠 Inici' : '⏮️ Reset' }}
+      </button>
+      
+      <button 
+        class="nav-button" 
+        (click)="previousGroup()" 
+        [disabled]="isFirstGroup()">
+        ⬅️ Anterior
+      </button>
+      
+      <button 
+        class="nav-button primary" 
+        (click)="nextGroupOrResults()">
+        {{ isLastGroup() ? 'Veure Resultats 🏆' : 'Següent ➡️' }}
+      </button>
+    </footer>
+
+    <!-- Paginació -->
+    <div class="pagination">
+      <div class="pagination-dots">
+        <button
+          *ngFor="let index of getGroupIndexes()"
+          class="pagination-dot"
+          [class.active]="index === currentGroupIndex"
+          (click)="goToGroup(index)"
+          [attr.aria-label]="'Anar al grup ' + (index + 1)">
+          <span class="dot-number">{{ index + 1 }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANTALLA DE RESULTATS -->
+  <div class="results-screen" *ngIf="currentScreen === 'results'">
+    <div class="results-content">
+      <h1 class="results-title">🏆 Resultats Finals 🏆</h1>
+      
+      <div class="results-grid">
+        <div 
+          class="result-card" 
+          *ngFor="let cat of getCategoryCounts()"
+          [style.border-color]="cat.color"
+          [class.has-selection]="hasSelectedMember()"
+          [class.contains-selected]="selectedMember && cat.members.includes(selectedMember)">
+          <div class="result-header" [style.background-color]="cat.color">
+            <h2 class="result-category">{{ cat.categoria }}</h2>
+          </div>
+          <div class="result-count">
+            <span class="count-number">{{ cat.count }}</span>
+            <span class="count-label">membres</span>
+          </div>
+          <div class="result-members">
+            <div 
+              class="member-item" 
+              *ngFor="let member of cat.members"
+              [class.selected]="isMemberSelected(member)"
+              [class.hidden]="hasSelectedMember() && !isMemberSelected(member)"
+              (click)="toggleMemberSelection(member)">
+              <span class="member-alias">{{ member.alias }}</span>
+              <span class="member-name">{{ member.nom }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-footer">
+        <div class="results-actions">
+          <button class="results-button" (click)="reset(); goToScreen('game')">
+            🔄 
+          </button>
+          <button class="results-button primary" (click)="goToScreen('intro')">
+            🏠 
+          </button>
+          <button class="results-button special" (click)="goToPersonatge()">
+            ⭐ 
+          </button>
+          <button class="results-button silver" (click)="goToAssistencia()">
+            📅
+          </button>
+          <button class="results-button search-button" (click)="goToBuscador()" title="Buscador de persones">
+            🔍
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
