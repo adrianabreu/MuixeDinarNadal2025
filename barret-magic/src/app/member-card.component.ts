@@ -53,7 +53,7 @@ export class MemberCardComponent {
     const colors: { [key: string]: string } = {
       'Muixelovers': '#FF3F32',
       'FOMO de Ferro': '#19C7E6',
-      'Talents emergents': '#4CAF50',
+      'Talents Emergents': '#4CAF50',
       'Comboiet': '#FFC107'
     };
     return colors[this.member.categoria] || '#666';
