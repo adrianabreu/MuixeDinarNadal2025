@@ -5,21 +5,21 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #0a0a0a;
   color: white;
-  overflow-x: hidden;
-}
-
-html, body {
   height: 100%;
   margin: 0;
-}
-
-/* Scroll suau */
-html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Animacions globals */

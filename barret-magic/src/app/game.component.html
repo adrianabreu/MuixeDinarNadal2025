@@ -44,15 +44,25 @@
     </header>
 
     <!-- Zona central amb les targetes dels membres -->
-    <main class="members-grid" [class.has-active-member]="activeMember !== null">
+    <main class="members-grid">
       <app-member-card 
         *ngFor="let member of currentGroup" 
         [member]="member"
-        [class.member-hidden]="isMemberHidden(member)"
-        [class.member-active]="activeMember === member"
-        (revealStateChange)="onMemberRevealChange($event)">
+        [isFloating]="false"
+        (cardClick)="openOverlay($event)">
       </app-member-card>
     </main>
+
+    <!-- Overlay amb la targeta flotant -->
+    <div class="member-overlay" *ngIf="activeMember" (click)="closeOverlay()">
+      <div class="floating-card" (click)="$event.stopPropagation()">
+        <app-member-card 
+          [member]="activeMember"
+          [isFloating]="true"
+          (revealStateChange)="onMemberRevealChange($event)">
+        </app-member-card>
+      </div>
+    </div>
 
     <!-- Botons de navegació -->
     <footer class="navigation">

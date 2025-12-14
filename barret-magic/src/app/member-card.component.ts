@@ -18,14 +18,35 @@ export interface Member {
 })
 export class MemberCardComponent {
   @Input() member!: Member;
-  @Output() revealStateChange = new EventEmitter<{ member: Member; state: number }>();
+  @Input() isFloating: boolean = false;
+  @Output() cardClick = new EventEmitter<Member>();
+  @Output() revealStateChange = new EventEmitter<{ member: Member; state: number; wasAtState2?: boolean }>();
   
   // Estats: 0 = només àlies, 1 = àlies + frase, 2 = àlies + frase + categoria
   revealState = 0;
 
+  handleClick(): void {
+    if (this.isFloating) {
+      // En el modal, canvia l'estat de revelació
+      this.toggleReveal();
+    } else {
+      // En el grid, obre el modal
+      this.cardClick.emit(this.member);
+    }
+  }
+
   toggleReveal(): void {
+    // Si estem a l'estat 2 i fem clic, hauríem de tancar després de 0.5s
+    const wasAtState2 = this.revealState === 2;
+    console.log('toggleReveal - current state:', this.revealState, 'wasAtState2:', wasAtState2);
     this.revealState = (this.revealState + 1) % 3;
-    this.revealStateChange.emit({ member: this.member, state: this.revealState });
+    const eventData = { 
+      member: this.member, 
+      state: this.revealState,
+      wasAtState2: wasAtState2 
+    };
+    console.log('Emitting event:', eventData);
+    this.revealStateChange.emit(eventData);
   }
 
   getCategoryColor(): string {

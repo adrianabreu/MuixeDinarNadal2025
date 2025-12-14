@@ -1,10 +1,12 @@
 .app-container {
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  overflow-x: visible;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 /* Capçalera */
@@ -69,58 +71,83 @@
   backdrop-filter: blur(10px);
 }
 
-/* Grid de membres */
+/* Grid de membres - 4 columnes */
 .members-grid {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
   padding: 0 2rem;
-  transition: all 0.4s ease;
-  overflow: visible;
-  position: relative;
 }
 
-/* Quan hi ha un membre actiu, el grid serveix de contenidor per al posicionament absolut */
-.members-grid.has-active-member {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
-  overflow: visible;
-}
-
-/* Membre no actiu quan n'hi ha un altre actiu: desapareix completament */
-.member-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s ease;
-  position: absolute;
-  transform: scale(0.5);
-}
-
-/* Membre actiu: ocupa el centre de la pantalla */
-.member-active {
-  position: relative;
-  transform: scale(1.4);
-  transition: all 0.4s ease;
-  box-shadow: 0 30px 80px rgba(255, 63, 50, 0.8);
-  z-index: 100;
-  max-width: 600px;
-  width: 90%;
-  margin: 0 auto;
+@media (max-width: 1200px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .member-active {
-    transform: scale(1.1);
-    max-width: 95vw;
-    width: 95%;
+  .members-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
-  
-  .members-grid.has-active-member {
-    min-height: 60vh;
+}
+
+/* Overlay per la targeta flotant */
+.member-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.floating-card {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: scaleIn 0.3s ease;
+  border-radius: 25px;
+}
+
+.floating-card app-member-card {
+  display: block;
+  transform: scale(1.1);
+  box-shadow: 0 30px 80px rgba(255, 63, 50, 0.8);
+}
+
+.floating-card app-member-card .member-card {
+  border-radius: 25px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -168,11 +195,12 @@
 
 /* === PANTALLA D'INICI === */
 .intro-screen {
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .intro-content {
@@ -316,11 +344,12 @@
 
 /* === PANTALLA DE RESULTATS === */
 .results-screen {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .results-content {

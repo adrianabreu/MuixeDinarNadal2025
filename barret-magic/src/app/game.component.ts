@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -31,11 +31,13 @@ export class GameComponent implements OnInit {
 
   // Game screen: membre actiu (en procés de revelació)
   activeMember: Member | null = null;
+  private previousRevealState: number = 0;
 
   constructor(
     private http: HttpClient, 
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -206,21 +208,37 @@ export class GameComponent implements OnInit {
   /**
    * Gestiona el canvi d'estat de revelació d'un membre
    */
-  onMemberRevealChange(event: { member: Member; state: number }): void {
-    if (event.state === 0) {
-      // Si torna a 0, ja no hi ha membre actiu
-      this.activeMember = null;
-    } else {
-      // Si està en procés de revelació (1 o 2), és el membre actiu
-      this.activeMember = event.member;
-    }
+  /**
+   * Obre l'overlay amb el membre seleccionat
+   */
+  openOverlay(member: Member): void {
+    this.activeMember = member;
+    this.previousRevealState = 0; // Reset state quan s'obri l'overlay
   }
 
   /**
-   * Comprova si un membre està amagat (perquè n'hi ha un altre actiu)
+   * Tanca l'overlay
    */
-  isMemberHidden(member: Member): boolean {
-    return this.activeMember !== null && this.activeMember !== member;
+  closeOverlay(): void {
+    console.log('closeOverlay called, activeMember before:', this.activeMember);
+    this.activeMember = null;
+    this.cdr.detectChanges();
+    console.log('closeOverlay called, activeMember after:', this.activeMember);
+  }
+
+  /**
+   * Gestiona els canvis d'estat de revelació en el modal
+   */
+  onMemberRevealChange(event: { member: Member; state: number; wasAtState2?: boolean }): void {
+    // Si estem a l'estat 2 (categoria) i fem clic, tanca l'overlay després de 0.5s
+    if (event.wasAtState2 === true) {
+      console.log('Tancant l\'overlay després de 0.5s, activeMember:', this.activeMember);
+      setTimeout(() => {
+        console.log('Timeout executed, activeMember:', this.activeMember);
+        this.closeOverlay();
+      }, 500);
+    }
+    this.previousRevealState = event.state;
   }
 
   /**
