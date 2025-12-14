@@ -22,6 +22,12 @@ body {
   overflow-y: hidden;
 }
 
+/* Allow scrolling when personatge component is active */
+body.personatge-active {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
 /* Animacions globals */
 @keyframes fadeIn {
   from {
