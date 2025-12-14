@@ -256,6 +256,13 @@ export class GameComponent implements OnInit {
   }
 
   /**
+   * Navega a la pàgina del premi d'assistència
+   */
+  goToAssistencia(): void {
+    this.router.navigate(['/assistencia']);
+  }
+
+  /**
    * Navega directament a un grup específic
    */
   goToGroup(index: number): void {

@@ -135,24 +135,18 @@
       </div>
 
       <div class="results-footer">
-        <div class="results-info">
-          <p class="results-subtitle">Distribució per Cases</p>
-          <p class="results-hint" *ngIf="!hasSelectedMember()">
-            💡 Fes clic en un membre per destacar-lo
-          </p>
-          <p class="results-hint selected" *ngIf="hasSelectedMember()">
-            ✨ Fes clic de nou per mostrar tots els membres
-          </p>
-        </div>
         <div class="results-actions">
           <button class="results-button" (click)="reset(); goToScreen('game')">
-            🔄 Tornar al Començament
+            🔄 
           </button>
           <button class="results-button primary" (click)="goToScreen('intro')">
-            🏠 Tornar a l'Inici
+            🏠 
           </button>
           <button class="results-button special" (click)="goToPersonatge()">
             ⭐ 
+          </button>
+          <button class="results-button silver" (click)="goToAssistencia()">
+            📅
           </button>
           <button class="results-button search-button" (click)="goToBuscador()" title="Buscador de persones">
             🔍
