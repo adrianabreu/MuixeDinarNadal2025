@@ -600,5 +600,19 @@
     "context": "Sònia… reina dels xupitos, discreta però infal·lible, amiga perfecta de festa i peça clau a la junta: el barret sap que al teu costat la nit sempre té una energia especial…",
     "fraseBarret": null,
     "categoria": "FOMO de Ferro"
+  },
+  {
+    "nom": "Tiffany",
+    "alias": "Tiffany",
+    "context": "Tiffany... entre castells, fotos i somriures, el barret reconeix una energia bonica que suma i que ja forma part de la colla....",
+    "fraseBarret": null,
+    "categoria": "Talents Emergents"
+  },
+  {
+    "nom": "Imanol",
+    "alias": "Imanol",
+    "context": "Imanol... arriba sense avisar, parla sense parar i ja fa base com si portara anys: Sueca en estat pur, el barret olora personatge.",
+    "fraseBarret": null,
+    "categoria": "FOMO de Ferro"
   }
 ]
